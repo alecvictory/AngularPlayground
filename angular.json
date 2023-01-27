@@ -178,6 +178,68 @@
                     }
                 }
             }
+        },
+        "employer": {
+            "projectType": "library",
+            "root": "libs/components/employer",
+            "sourceRoot": "libs/components/employer/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "project": "libs/components/employer/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "libs/components/employer/tsconfig.lib.prod.json"
+                        },
+                        "development": {
+                            "tsConfig": "libs/components/employer/tsconfig.lib.json"
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "libs/components/employer/src/test.ts",
+                        "tsConfig": "libs/components/employer/tsconfig.spec.json",
+                        "karmaConfig": "libs/components/employer/karma.conf.js"
+                    }
+                }
+            }
+        },
+        "employee": {
+            "projectType": "library",
+            "root": "libs/components/employee",
+            "sourceRoot": "libs/components/employee/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "project": "libs/components/employee/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "libs/components/employee/tsconfig.lib.prod.json"
+                        },
+                        "development": {
+                            "tsConfig": "libs/components/employee/tsconfig.lib.json"
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "libs/components/employee/src/test.ts",
+                        "tsConfig": "libs/components/employee/tsconfig.spec.json",
+                        "karmaConfig": "libs/components/employee/karma.conf.js"
+                    }
+                }
+            }
         }
     },
     "defaultProject": "shell"

@@ -10,24 +10,17 @@
         "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
         "paths": {
-          "@itt-components/home": [
-            "libs/components/home/src/public-api.ts"
-          ],
-          "@itt-components/todo": [
-            "libs/components/todo/src/public-api.ts"
-          ],
-          "home": [
-            "dist/home/home",
-            "dist/home"
-          ],
-          "libs": [
-            "dist/libs/libs",
-            "dist/libs"
-          ],
-          "todo": [
-            "dist/todo/todo",
-            "dist/todo"
-          ]
+            "@itt-components/home": ["libs/components/home/src/public-api.ts"],
+            "@itt-components/todo": ["libs/components/todo/src/public-api.ts"],
+            "@itt-components/employee": [
+                "libs/components/employee/src/public-api.ts"
+            ],
+            "@itt-components/employer": [
+                "libs/components/employer/src/public-api.ts"
+            ],
+            "home": ["dist/home/home", "dist/home"],
+            "libs": ["dist/libs/libs", "dist/libs"],
+            "todo": ["dist/todo/todo", "dist/todo"]
         },
         "declaration": false,
         "downlevelIteration": true,
@@ -36,10 +29,7 @@
         "importHelpers": true,
         "target": "es2020",
         "module": "es2020",
-        "lib": [
-            "es2018",
-            "dom"
-        ]
+        "lib": ["es2018", "dom"]
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
