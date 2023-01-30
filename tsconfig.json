@@ -11,16 +11,30 @@
         "sourceMap": true,
         "paths": {
             "@itt-components/home": ["libs/components/home/src/public-api.ts"],
-            "@itt-components/todo": ["libs/components/todo/src/public-api.ts"],
             "@itt-components/employee": [
-                "libs/components/employee/src/public-api.ts"
+                "libs/features/employees/employeeGrid/src/public-api.ts"
             ],
             "@itt-components/employer": [
-                "libs/components/employer/src/public-api.ts"
+                "libs/features/employers/employerGrid/src/public-api.ts"
+            ],
+            "employeeDetails": [
+              "dist/employee-details/employee-details",
+              "dist/employee-details"
+            ],
+            "employeeForm": [
+              "dist/employee-form/employee-form",
+              "dist/employee-form"
+            ],
+            "employerDetails": [
+              "dist/employer-details/employer-details",
+              "dist/employer-details"
+            ],
+            "employerForm": [
+              "dist/employer-form/employer-form",
+              "dist/employer-form"
             ],
             "home": ["dist/home/home", "dist/home"],
-            "libs": ["dist/libs/libs", "dist/libs"],
-            "todo": ["dist/todo/todo", "dist/todo"]
+            "libs": ["dist/libs/libs", "dist/libs"]
         },
         "declaration": false,
         "downlevelIteration": true,

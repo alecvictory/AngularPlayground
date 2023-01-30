@@ -1,6 +1,31 @@
-<h1>Angular Playground</h1>
+<h1>Angular Playground [Employee Tracker]</h1>
 
-<a routerLink="/">Home</a> | <a routerLink="/employer">Employer</a> |
-<a routerLink="/employee">Employee</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/employer">Employer</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/employee">Employee</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <router-outlet></router-outlet>
