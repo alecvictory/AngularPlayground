@@ -1,20 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-employer',
-  template: `
-    <p>
-      employer works!
-    </p>
-  `,
-  styles: [
-  ]
+    selector: 'lib-employer',
+    templateUrl: './employer.component.html',
+    styles: [],
 })
 export class EmployerComponent implements OnInit {
+    employerDefs = [
+        { field: 'companyName' },
+        { field: 'numberOfEmployees' },
+        { field: 'address' },
+    ];
 
-  constructor() { }
+    employerDatas = [
+        {
+            companyName: 'In Time Tec',
+            numberOfEmployees: '100',
+            address: 'insert street name',
+        },
+        {
+            companyName: 'Truckstop',
+            numberOfEmployees: '500',
+            address: 'insert street name',
+        },
+        {
+            companyName: 'Zennify',
+            numberOfEmployees: '50',
+            address: 'insert random street name',
+        },
+    ];
 
-  ngOnInit(): void {
-  }
+    constructor() {}
 
+    ngOnInit(): void {}
 }
