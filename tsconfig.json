@@ -11,27 +11,23 @@
         "sourceMap": true,
         "paths": {
             "@itt-components/home": ["libs/components/home/src/public-api.ts"],
-            "@itt-components/employee": [
+            "@itt-components/employeeGrid": [
                 "libs/features/employees/employeeGrid/src/public-api.ts"
             ],
-            "@itt-components/employer": [
-                "libs/features/employers/employerGrid/src/public-api.ts"
+            "employeeForm": [
+                "libs/features/employees/employeeForm/src/public-api.ts"
             ],
             "employeeDetails": [
-              "dist/employee-details/employee-details",
-              "dist/employee-details"
+                "libs/features/employees/employeeDetails/src/public-api.ts"
             ],
-            "employeeForm": [
-              "dist/employee-form/employee-form",
-              "dist/employee-form"
+            "@itt-components/employerGrid": [
+                "libs/features/employers/employerGrid/src/public-api.ts"
             ],
             "employerDetails": [
-              "dist/employer-details/employer-details",
-              "dist/employer-details"
+                "libs/features/employers/employerDetails/src/public-api.ts"
             ],
             "employerForm": [
-              "dist/employer-form/employer-form",
-              "dist/employer-form"
+                "libs/features/employers/employerForm/src/public-api.ts"
             ],
             "home": ["dist/home/home", "dist/home"],
             "libs": ["dist/libs/libs", "dist/libs"]

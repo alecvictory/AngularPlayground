@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '@itt-components/home';
-import { EmployerComponent } from '@itt-components/employer';
-import { EmployeeComponent } from '@itt-components/employee';
+import { EmployerGridComponent } from '@itt-components/employerGrid';
+import { EmployeeGridComponent } from '@itt-components/employeeGrid';
 
 const routes: Routes = [
     {
@@ -11,12 +11,12 @@ const routes: Routes = [
         pathMatch: 'full',
     },
     {
-        path: 'employer',
-        component: EmployerComponent,
+        path: 'employerGrid',
+        component: EmployerGridComponent,
     },
     {
-        path: 'employee',
-        component: EmployeeComponent,
+        path: 'employeeGrid',
+        component: EmployeeGridComponent,
     },
 ];
 

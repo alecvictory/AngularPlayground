@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'lib-employee',
-    templateUrl: './employee.component.html',
+    templateUrl: './employeeGrid.component.html',
     styles: [],
 })
-export class EmployeeComponent implements OnInit {
+export class EmployeeGridComponent implements OnInit {
     employeeDefs = [
         { field: 'firstName' },
         { field: 'lastName' },

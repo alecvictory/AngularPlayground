@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AgGridModule } from 'ag-grid-angular';
-import { EmployerComponent } from './employer.component';
+import { EmployeeGridComponent } from './employeeGrid.component';
 
 @NgModule({
-    declarations: [EmployerComponent],
+    declarations: [EmployeeGridComponent],
     imports: [AgGridModule, BrowserModule],
-    exports: [EmployerComponent],
+    exports: [EmployeeGridComponent],
 })
-export class EmployerModule {}
+export class EmployeeModule {}
