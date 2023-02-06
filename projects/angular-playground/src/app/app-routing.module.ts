@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '@itt-components/home';
 import { EmployerGridComponent } from '@itt-components/employerGrid';
 import { EmployeeGridComponent } from '@itt-components/employeeGrid';
+import { EmployeeDetailsComponent } from '@itt-components/employeeDetails';
+import { EmployeeFormComponent } from '@itt-components/employeeForm';
 
 const routes: Routes = [
     {
@@ -13,6 +15,14 @@ const routes: Routes = [
     {
         path: 'employerGrid',
         component: EmployerGridComponent,
+    },
+    {
+        path: 'employeeDetails',
+        component: EmployeeDetailsComponent,
+    },
+    {
+        path: 'employeeForm',
+        component: EmployeeFormComponent,
     },
     {
         path: 'employeeGrid',

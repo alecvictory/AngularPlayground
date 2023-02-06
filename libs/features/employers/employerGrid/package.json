@@ -1,5 +1,5 @@
 {
-    "name": "@itt-components/${employer}",
+    "name": "@itt-components/employerGrid",
     "version": "0.0.1",
     "peerDependencies": {
         "@angular/common": "^13.2.0",

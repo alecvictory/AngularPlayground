@@ -14,19 +14,19 @@
             "@itt-components/employeeGrid": [
                 "libs/features/employees/employeeGrid/src/public-api.ts"
             ],
-            "employeeForm": [
-                "libs/features/employees/employeeForm/src/public-api.ts"
-            ],
-            "employeeDetails": [
+            "@itt-components/employeeDetails": [
                 "libs/features/employees/employeeDetails/src/public-api.ts"
+            ],
+            "@itt-components/employeeForm": [
+                "libs/features/employees/employeeForm/src/public-api.ts"
             ],
             "@itt-components/employerGrid": [
                 "libs/features/employers/employerGrid/src/public-api.ts"
             ],
-            "employerDetails": [
+            "@itt-components/employerDetails": [
                 "libs/features/employers/employerDetails/src/public-api.ts"
             ],
-            "employerForm": [
+            "@itt-components/employerForm": [
                 "libs/features/employers/employerForm/src/public-api.ts"
             ],
             "home": ["dist/home/home", "dist/home"],

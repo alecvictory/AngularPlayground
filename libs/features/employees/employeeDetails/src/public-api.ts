@@ -2,6 +2,6 @@
  * Public API Surface of employee-details
  */
 
-export * from './lib/employee-details.service';
-export * from './lib/employee-details.component';
-export * from './lib/employee-details.module';
+export * from './lib/employeeDetails.service';
+export * from './lib/employeeDetails.component';
+export * from './lib/employeeDetails.module';

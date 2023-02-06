@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ButtonRendererComponent } from './renderer/button-renderer.component';
+import { Employee } from 'libs/models/employee.model';
+import { EMPLOYEES } from '../../../../../components/employee/mock-employees';
 
 @Component({
     selector: 'lib-employee',
@@ -6,7 +9,26 @@ import { Component, OnInit } from '@angular/core';
     styles: [],
 })
 export class EmployeeGridComponent implements OnInit {
-    employeeDefs = [
+    employees: Employee[] = EMPLOYEES;
+
+    frameworkComponents: any;
+
+    constructor() {
+        this.frameworkComponents = {
+            buttonRenderer: ButtonRendererComponent,
+        };
+    }
+    rowDataClicked1 = {};
+
+    employeeGridDefs = [
+        {
+            field: 'details ',
+            cellRenderer: 'buttonRenderer',
+            cellRendererParams: {
+                onClick: this.onBtnClick1.bind(this),
+                label: 'Details',
+            },
+        },
         { field: 'firstName' },
         { field: 'lastName' },
         { field: 'email' },
@@ -16,8 +38,9 @@ export class EmployeeGridComponent implements OnInit {
         { field: 'salary' },
     ];
 
-    employeeDatas = [
+    employeeGridDatas = [
         {
+            details: 'Details',
             firstName: 'Alec',
             lastName: 'Victory',
             email: 'alecvictory@intimetec.com',
@@ -27,6 +50,7 @@ export class EmployeeGridComponent implements OnInit {
             salary: '$100,000',
         },
         {
+            details: 'Details',
             firstName: 'Trevor',
             lastName: 'Allen',
             email: 'trevorallen@intimetec.com',
@@ -36,6 +60,7 @@ export class EmployeeGridComponent implements OnInit {
             salary: '$100,000',
         },
         {
+            details: 'Details',
             firstName: 'Collin',
             lastName: 'Miller',
             email: 'CollinMiller@intimetec.com',
@@ -45,8 +70,11 @@ export class EmployeeGridComponent implements OnInit {
             salary: '$200,000',
         },
     ];
-
-    constructor() {}
-
+    onBtnClick1(e: any) {
+        this.rowDataClicked1 = e.rowData;
+    }
     ngOnInit(): void {}
+    onRowClicked() {
+        console.log('it worked');
+    }
 }
