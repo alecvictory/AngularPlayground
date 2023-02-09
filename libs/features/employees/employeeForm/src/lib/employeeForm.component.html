@@ -1,12 +1,12 @@
 <div class="container my-5">
     <h1 class="mb-3">Add New Employee</h1>
-    <form (ngSubmit)="onSubmit()">
+    <form [formGroup]="employeeForm">
         <div class="form-control">
             <label for="text">First Name: </label>
             <input
                 type="text"
                 name="firstName"
-                [(ngModel)]="firstName"
+                formControlName="firstName"
                 id="firstName"
                 placeholder="Add First Name"
             />
@@ -16,7 +16,7 @@
             <input
                 type="text"
                 name="lastName"
-                [(ngModel)]="lastName"
+                formControlName="lastName"
                 id="lastName"
                 placeholder="Add Last Name"
             />
@@ -26,7 +26,7 @@
             <input
                 type="text"
                 name="email"
-                [(ngModel)]="email"
+                formControlName="email"
                 id="email"
                 placeholder="Add Email"
             />
@@ -36,7 +36,7 @@
             <input
                 type="text"
                 name="phone"
-                [(ngModel)]="phone"
+                formControlName="phone"
                 id="phone"
                 placeholder="Add Phone"
             />
@@ -46,7 +46,7 @@
             <input
                 type="text"
                 name="salary"
-                [(ngModel)]="salary"
+                formControlName="salary"
                 id="salary"
                 placeholder="Add Salary"
             />
@@ -56,7 +56,7 @@
             <input
                 type="text"
                 name="department"
-                [(ngModel)]="department"
+                formControlName="department"
                 id="department"
                 placeholder="Add Department"
             />
@@ -66,7 +66,7 @@
             <input
                 type="text"
                 name="position"
-                [(ngModel)]="position"
+                formControlName="position"
                 id="position"
                 placeholder="Add Position"
             />

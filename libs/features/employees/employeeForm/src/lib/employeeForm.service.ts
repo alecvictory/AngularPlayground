@@ -9,7 +9,5 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class EmployeeFormService {
     private apiUrl = 'http://localhost:5000/employees';
-    constructor(private http: HttpClient) {}
-
-    addEmployee(employee: Employee) {}
+    constructor() {}
 }

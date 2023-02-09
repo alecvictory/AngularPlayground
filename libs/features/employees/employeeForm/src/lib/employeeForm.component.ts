@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Employee } from 'libs/models/employee.model';
 
 @Component({
@@ -7,40 +8,21 @@ import { Employee } from 'libs/models/employee.model';
     styles: [],
 })
 export class EmployeeFormComponent implements OnInit {
-    @Output() onAddEmployee: EventEmitter<Employee> = new EventEmitter();
+    title = 'EmployeeForms';
 
-    id: number;
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    salary: string;
-    department: string;
-    position: string;
+    public employeeForm: FormGroup;
 
     constructor() {}
 
-    ngOnInit(): void {}
-
-    onSubmit() {
-        const newEmployee = {
-            firstName: this.firstName,
-            lastName: this.lastName,
-            email: this.email,
-            phone: this.phone,
-            salary: this.salary,
-            department: this.department,
-            position: this.position,
-        };
-
-        this.onAddEmployee.emit(newEmployee);
-
-        (this.firstName = ''),
-            (this.lastName = ''),
-            (this.email = ''),
-            (this.phone = ''),
-            (this.salary = ''),
-            (this.department = ''),
-            (this.position = '');
+    ngOnInit(): void {
+        this.employeeForm = new FormGroup({
+            firstName: new FormControl(null),
+            lastName: new FormControl(null),
+            email: new FormControl(null),
+            phone: new FormControl(null),
+            salary: new FormControl(null),
+            department: new FormControl(null),
+            position: new FormControl(null),
+        });
     }
 }
