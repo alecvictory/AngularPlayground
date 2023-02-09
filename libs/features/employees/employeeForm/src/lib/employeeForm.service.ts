@@ -11,8 +11,5 @@ export class EmployeeFormService {
     private apiUrl = 'http://localhost:5000/employees';
     constructor(private http: HttpClient) {}
 
-    // addEmployee(addEmployee: Employee): Observable<Employee>{
-    //   addEmployee.id = '00000000-0000-0000-0000-000000000000';
-    //   return this.post
-    // }
+    addEmployee(employee: Employee) {}
 }

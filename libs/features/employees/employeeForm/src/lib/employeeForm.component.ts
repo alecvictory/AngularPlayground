@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { EmployeeDetailsService } from '@itt-components/employeeDetails';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Employee } from 'libs/models/employee.model';
-import { EmployeeFormService } from './employeeForm.service';
 
 @Component({
     selector: 'lib-employeeForm',
@@ -10,7 +7,40 @@ import { EmployeeFormService } from './employeeForm.service';
     styles: [],
 })
 export class EmployeeFormComponent implements OnInit {
+    @Output() onAddEmployee: EventEmitter<Employee> = new EventEmitter();
+
+    id: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    salary: string;
+    department: string;
+    position: string;
+
     constructor() {}
 
     ngOnInit(): void {}
+
+    onSubmit() {
+        const newEmployee = {
+            firstName: this.firstName,
+            lastName: this.lastName,
+            email: this.email,
+            phone: this.phone,
+            salary: this.salary,
+            department: this.department,
+            position: this.position,
+        };
+
+        this.onAddEmployee.emit(newEmployee);
+
+        (this.firstName = ''),
+            (this.lastName = ''),
+            (this.email = ''),
+            (this.phone = ''),
+            (this.salary = ''),
+            (this.department = ''),
+            (this.position = '');
+    }
 }
