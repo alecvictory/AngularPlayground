@@ -30,6 +30,9 @@
             "@itt-components/employerForm": [
                 "libs/features/employers/employerForm/src/public-api.ts"
             ],
+            "@itt-components/employeeConst": [
+                "libs/components/employee/public-api.ts"
+            ],
             "home": ["dist/home/home", "dist/home"],
             "libs": ["dist/libs/libs", "dist/libs"]
         },

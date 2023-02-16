@@ -17,7 +17,7 @@ const routes: Routes = [
         component: EmployerGridComponent,
     },
     {
-        path: 'employeeDetails',
+        path: 'employeeDetails/:id',
         component: EmployeeDetailsComponent,
     },
     {

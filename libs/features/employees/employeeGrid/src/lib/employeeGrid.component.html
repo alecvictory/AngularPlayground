@@ -6,9 +6,10 @@
     [frameworkComponents]="frameworkComponents"
     rowSelection="single"
     (selectionChanged)="onRowClicked()"
+    (gridReady)="onGridReady($event)"
 ></ag-grid-angular>
 
-<div>
+<!-- <div>
     <div>
         <ul>
             <li *ngFor="let employee of employees">{{ employee.firstName }}</li>
@@ -46,4 +47,4 @@
             <li *ngFor="let employee of employees">{{ employee.position }}</li>
         </ul>
     </div>
-</div>
+</div> -->
