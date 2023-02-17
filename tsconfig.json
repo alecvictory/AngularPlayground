@@ -33,6 +33,9 @@
             "@itt-components/employeeConst": [
                 "libs/components/employee/public-api.ts"
             ],
+            "@itt-components/employerConst": [
+                "libs/components/employer/public-api.ts"
+            ],
             "home": ["dist/home/home", "dist/home"],
             "libs": ["dist/libs/libs", "dist/libs"]
         },

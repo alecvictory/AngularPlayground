@@ -3,4 +3,8 @@
     class="ag-theme-alpine"
     [rowData]="employerDatas"
     [columnDefs]="employerDefs"
+    [frameworkComponents]="frameworkComponents"
+    rowSelection="single"
+    (selectionChanged)="onRowClicked()"
+    (gridReady)="onGridReady($event)"
 ></ag-grid-angular>

@@ -5,6 +5,7 @@ import { EmployerGridComponent } from '@itt-components/employerGrid';
 import { EmployeeGridComponent } from '@itt-components/employeeGrid';
 import { EmployeeDetailsComponent } from '@itt-components/employeeDetails';
 import { EmployeeFormComponent } from '@itt-components/employeeForm';
+import { EmployerDetailsComponent } from '@itt-components/employerDetails';
 
 const routes: Routes = [
     {
@@ -15,6 +16,10 @@ const routes: Routes = [
     {
         path: 'employerGrid',
         component: EmployerGridComponent,
+    },
+    {
+        path: 'employerDetails/:id',
+        component: EmployerDetailsComponent,
     },
     {
         path: 'employeeDetails/:id',

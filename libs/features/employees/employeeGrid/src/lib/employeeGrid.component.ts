@@ -27,7 +27,6 @@ export class EmployeeGridComponent implements OnInit {
             field: 'details ',
             cellRenderer: 'buttonRenderer',
             cellRendererParams: {
-                onClick: this.onBtnClick1.bind(this),
                 label: 'Details',
             },
         },
@@ -41,10 +40,6 @@ export class EmployeeGridComponent implements OnInit {
     ];
 
     employeeGridDatas = EMPLOYEES;
-
-    onBtnClick1(e: any) {
-        this.rowDataClicked1 = e.rowData;
-    }
 
     ngOnInit(): void {}
 
